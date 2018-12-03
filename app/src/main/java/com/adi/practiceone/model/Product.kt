@@ -30,6 +30,7 @@ data class Product(
     val stock: Int,
     val top_merchant: Boolean,
     val url: String,
+    val interest_count : Int,
     val view_count: Int,
     val weight: Int
 )
