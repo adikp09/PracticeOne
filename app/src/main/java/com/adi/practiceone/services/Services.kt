@@ -5,14 +5,15 @@ import com.adi.practiceone.model.ResponListProduct
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface Services {
 
     //1
-    @GET("/v2/products.json?keywords=samsung&page=1")
+    @GET("/v2/products.json")
     fun getListProduct(
-//        @Path("query") query: String,
-//        @Path("page") page: Int
+        @Query("keywords") query: String,
+        @Query("page") page: Int
     ): Call<ResponListProduct>
 
 

@@ -9,7 +9,7 @@ import ss.com.bannerslider.viewholder.ImageSlideViewHolder
 class SliderAdapter (private val list: List<String>, private val context: Context) : SliderAdapter() {
 
     override fun getItemCount(): Int {
-        return 3
+        return list.size
     }
 
     override fun onBindImageSlide(position: Int, viewHolder: ImageSlideViewHolder) {
